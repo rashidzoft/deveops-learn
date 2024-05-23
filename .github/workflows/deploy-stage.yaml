@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Print hello
         run: echo hai
+      
+      - name: View PWD
+        run: pwd
 
 
 
