@@ -1,11 +1,17 @@
-name: 'Deploy website on push'
+# A name for our Workflow
+name: Build and Deploy React App
 
+# Specifies that the workflow should be triggered on a Git push event.
 on:
     push:
         branches:
+            #Specifies the branches on which the workflow should be triggered
             - main
+
+#Defines the jobs to be executed as part of the workflow
 jobs:
-    start:
+    #The name of the job, in this case, "CI-CD."
+    CI-CD:
         name: Greet
         runs-on: ubuntu-latest
 
