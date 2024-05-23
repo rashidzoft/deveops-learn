@@ -12,9 +12,10 @@ on:
 jobs:
     #The name of the job, in this case, "CI-CD."
     CI-CD:
-        name: Greet
         runs-on: ubuntu-latest
 
         steps:
+            - uses: actions/checkout@v4
+          
             -name: Print hello
             run: echo hai
